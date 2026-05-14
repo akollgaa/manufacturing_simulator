@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manufacturingsim"
+version = "0.1.0"
+description = "ManufacturingStudio walking skeleton with XML parsing, headless simulation, and an optional Qt shell."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+gui = [
+  "PySide6>=6.6",
+]
+dxf = [
+  "ezdxf>=1.3",
+]
+dev = [
+  "pytest>=8.0",
+]
+
